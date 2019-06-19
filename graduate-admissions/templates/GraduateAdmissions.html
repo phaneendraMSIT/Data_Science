@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" class="" style="height:auto">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Graduate Admissions</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body class="skin-blue" style=" height: auto">
+    <header class="title">
+        <h2> Admission Predictor </h2>
+    </header>
+    <div style="display: block">
+        <div class="input">
+            <form action=" http://127.0.0.1:5000/" method="POST">
+                <div>
+                    GRE Score:<br>
+                    <input type="text" id="greScore" name="greScore" placeholder="Input your GRE Score"><br>
+                </div>
+                <div>
+                    TOEFL Score:<br>
+                    <input type="text" id="toeflScore" name="toeflScore" placeholder="Input your TOEFL Score"><br>
+                </div>
+                <div>
+                    University Rating: <br>
+                    <input type="number" id="universityRating" max="5" min="1"><br>
+                </div>
+                <div>
+                    Research:<br>
+                    <input type="number" name="research" max="1" min="0"><br>
+                </div>
+            </form>
+            <button type="submit" class="btn btn-default" value="Submit"> SUBMIT</button>
+        </div>
+        <div class="plotDisplay">
+
+        </div>
+        <div class="regression">
+            <div>
+                Linear Regression:<br>
+                <div class="input-group">
+                    <span class="input-group-btn">
+                            <button class="LinearRegression" type="button" aria-label="">SUBMIT</button>
+                    </span>
+                    <output type="text" name="LinearText" id="LinearOutput" aria-label=""></output>
+                </div>
+            </div>
+            <div>
+                Gradient Boosting Regression:<br>
+                <div class="input-group">
+                    <span class="input-group-btn">
+                        <button class="GradientBoosting" type="button" aria-label="">SUBMIT</button>
+                    </span>
+                    <output type="text" name="GradientText" id="GradientOutput" aria-label=""></output>
+                </div>
+            </div>
+            <div>
+                RandomForest Regression: <br>
+                <div class="input-group">
+                    <span class="input-group-btn">
+                        <button class="RandomForest" type="button" aria-label="">SUBMIT</button>
+                    </span>
+                    <output type="text" name="RandomForestText" id="RandomForestOutput" aria-label=""></output>
+                </div>
+            </div>
+            <div>
+                KNN Regression:<br>
+                <div class="input-group">
+                    <span class="input-group-btn">
+                        <button class="KNNRegression" type="button" aria-label="">SUBMIT</button>
+                    </span>
+                    <output type="text" name="KNNRegressionText" id="KNNRegressionOutput" aria-label=""></output>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>

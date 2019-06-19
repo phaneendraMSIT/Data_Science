@@ -1,0 +1,33 @@
+body {
+    font-family: 'Source Sans Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    overflow-x: hidden;
+    overflow-y: auto;
+    line-height: 1.42857143;
+    background-color: lightblue;
+}
+
+.title {
+    border-block-end-style: dashed;
+    border-color: black;
+    padding: 30px;
+    font-size: 50px;
+    text-align: center;
+}
+
+.input {
+    block-size: 300px;
+    border-block-end-color: black;
+    border-block-end-style: solid;
+    border-block-start-width: 10px;
+    float: left;
+    margin: 10px;
+}
+
+.regression {
+    block-size: 300px;
+    border-block-end-color: black;
+    border-block-end-style: solid;
+    float: right;
+    margin: 10px;
+}
